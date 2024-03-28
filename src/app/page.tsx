@@ -10,8 +10,6 @@ export default function Home() {
     <main className="min-h-screen bg-black/95 antialiased bg-grid-white/[0.02]">
       <HeroSection />
       <FeaturedProducts />
-      <GlobeDemo />
-      
     </main>
   );
 }
