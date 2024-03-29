@@ -68,7 +68,7 @@ const Footer = () => {
               placeholder="hi@manuarora.in"
               className="rounded-lg border py-2 px-2 border-neutral-800 focus:ring-2 focus:ring-teal-500  w-full relative z-10 bg-neutral-950 placeholder:text-neutral-500"
             />
-            <button className="mt-6 mb-6 px-8 py-2 text-white font-bold transition duration-200 hover:bg-slate-900/[0.8] border-2 border-transparent 
+            <button className="mt-6 mb-6 px-8 py-2 text-white font-bold transition duration-200 hover:bg-slate-900/[0.8] border-2 
          border-teal-700 rounded-2xl">
               Submit
             </button>
