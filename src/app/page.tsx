@@ -5,6 +5,7 @@ import { cn } from "@/utils/cn";
 import { CardSlider } from "@/components/CardSlider";
 import { HeroSection } from "@/components/HeroSection";
 import connectImg from "@/assets/connect.png"
+import Image from "next/image";
 
 
 export default function Home() {
@@ -27,7 +28,8 @@ export default function Home() {
           Connect Life Solutions
         </h1>
         <div className="z-40 opacity-85">
-          <img src={connectImg.src} className=" md:max-w-xl" alt="image" />
+          <Image src={connectImg.src} width={500}
+      height={500} className=" md:max-w-xl" alt="image" />
         </div>
         <div>
           <p className="text-neutral-300 text-xl max-w-2xl pt-6 lg:pt-0 relative z-20">
