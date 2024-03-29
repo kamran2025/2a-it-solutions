@@ -8,7 +8,7 @@ export default function Navbar({ className }: { className?: string }) {
   const [active, setActive] = useState<string | null>(null);
   return (
     <div
-      className={cn("absolute md:fixed top-2 md:top-6 inset-x-0 max-w-[1450px] mx-auto z-50 md:flex justify-between px-2", className)}>
+      className={cn("absolute md:fixed top-2 md:top-6 inset-x-0 max-w-[1450px] mx-auto z-[999] md:flex justify-between px-2", className)}>
       <div className="md:px-2 text-center py-2">
         <Link href={"/"}>
          <h3 className="text-2xl xl:text-3xl">2A Corporate Solutions</h3>
