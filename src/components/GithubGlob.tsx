@@ -395,8 +395,8 @@ export function GithubGlob() {
   ];
 
   return (
-    <div className="py-4 md:h-auto relative w-full">
-      <div className=" mx-auto w-[25rem] h-[25rem] lg:w-[35rem] lg:h-[30rem] relative overflow-hidden">
+    <div className=" md:h-auto relative w-full">
+      <div className=" mx-auto w-[20rem] h-[20rem] lg:w-[35rem] lg:h-[30rem] relative overflow-hidden">
         <motion.div
           initial={{
             opacity: 0,
@@ -412,8 +412,8 @@ export function GithubGlob() {
           className="div"
         >
         </motion.div>
-      
-        <div className="absolute w-full h-full z-10">
+          
+        <div className="absolute w-full h-full z-10 ">
           <World data={sampleArcs} globeConfig={globeConfig} />
         </div>
       </div>
