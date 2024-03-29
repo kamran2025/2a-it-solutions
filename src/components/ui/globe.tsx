@@ -96,6 +96,7 @@ export function Globe({ globeConfig, data }: WorldProps) {
       _buildData();
       _buildMaterial();
     }
+    if (!globeRef.current) return;
   }, [globeRef.current]);
 
   const _buildMaterial = () => {

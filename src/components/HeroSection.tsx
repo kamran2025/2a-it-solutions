@@ -16,7 +16,7 @@ export function HeroSection() {
           <p className="text-neutral-400 max-w-xl my-2 ml-2 text-sm relative z-10 mt-4 mb-10">
             Join us on a journey of technological excellence, where creativity meets cutting-edge innovation to shape a brighter future. Together, let's build the digital landscape of tomorrow, today.
           </p>
-          <Link href="/contact">
+          <Link href={"/contact"}>
             <MovingBorderButton />
           </Link>
         </div>
