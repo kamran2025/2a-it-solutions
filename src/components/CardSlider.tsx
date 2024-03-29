@@ -13,7 +13,7 @@ export function CardSlider() {
       <InfiniteMovingCards
         items={testimonials}
         direction="right"
-        speed="normal"
+        speed="slow"
       />
     </div>
   );
