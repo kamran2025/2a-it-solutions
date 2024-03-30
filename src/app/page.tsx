@@ -86,7 +86,7 @@ export default function Home() {
         <Image src={babstractBG.src} className="absolute w-full h-full top-0 left-0 opacity-70" width={2000} height={2000} alt="icon" />
       </div>
       {/* Our Commitment - Flexible Approach  */}
-      {/* <ScrollAnimation /> */}
+      <ScrollAnimation />
 
 
     </main>

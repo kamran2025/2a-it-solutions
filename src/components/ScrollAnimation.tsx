@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { ContainerScroll } from "./ui/container-scroll-animation";
+import { GradientCard } from "./GradientCard";
 
 export function ScrollAnimation() {
   return (
@@ -17,8 +18,16 @@ export function ScrollAnimation() {
           </>
         }
       >
-        <div>
-          
+        <div className="py-6 px-4">
+          <h4 className="text-lg">At CLS, we unswervingly improve our systems, processes and people and offer a collaboration process that is 100% flexible.</h4>
+          <ul className="pt-6">
+              <li className="mb-3 text-lg"><span className="mr-3 ml-1">&bull;</span>Innovation Leadership</li>
+              <li className="mb-3 text-lg"><span className="mr-3 ml-1">&bull;</span>Effortless Partnership</li>
+              <li className="mb-3 text-lg"><span className="mr-3 ml-1">&bull;</span>Lean Delivery</li>
+            </ul>
+            <div className="py-12 mt-8">
+              <GradientCard />
+            </div>
         </div>
       </ContainerScroll>
     </div>
