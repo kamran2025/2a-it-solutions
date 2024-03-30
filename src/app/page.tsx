@@ -56,7 +56,7 @@ export default function Home() {
         <h1 className="text-center md:text-4xl text-3xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-400  font-sans font-bold z-10">
           Vision and Mission
         </h1>
-        <div className="max-w-6xl grid grid-cols-1 md:grid-cols-2 place-items-center py-10 lg:mx-auto lg:gap-x-40 z-10">
+        <div className="max-w-6xl grid grid-cols-1 md:grid-cols-2 sm:place-items-center py-10 lg:mx-auto lg:gap-x-40 z-10">
           <div className="pt-14 px-2 max-w-md">
             <Image src={cuttingIcon.src} width={60} height={60} alt="icon" />
             <h2 className="text-2xl font-semibold text-gray-300 py-4">Cutting Edge Technologies</h2>

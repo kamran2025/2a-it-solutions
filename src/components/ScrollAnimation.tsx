@@ -18,7 +18,7 @@ export function ScrollAnimation() {
           </>
         }
       >
-        <div className="py-6 px-4">
+        <div className="py-6 px-2 md:px-4">
           <h4 className="text-lg">At CLS, we unswervingly improve our systems, processes and people and offer a collaboration process that is 100% flexible.</h4>
           <ul className="pt-6">
               <li className="mb-3 text-lg"><span className="mr-3 ml-1">&bull;</span>Innovation Leadership</li>
