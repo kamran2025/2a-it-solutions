@@ -1,6 +1,7 @@
 "use client";
 
 import { cn } from "@/utils/cn";
+import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
 export const InfiniteMovingCards = ({
@@ -93,8 +94,8 @@ export const InfiniteMovingCards = ({
             }}
             key={idx}
           >
-            <img src={item.icon} className="w-18 h-16 opacity-80 mx-4 mt-2" alt="icon" />
-            <blockquote>
+            <Image src={item.icon} className="w-18 h-16 opacity-80 mx-4 mt-2" width={72} height={64} alt="icon" />
+            <blockquote> 
               <div
                 aria-hidden="true"
                 className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
