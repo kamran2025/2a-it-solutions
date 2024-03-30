@@ -23,7 +23,7 @@ export function GradientCard() {
     <div className="flex flex-wrap gap-6 justify-center md:justify-start">
       {cardData.map((data:any, index:any) => (
         <BackgroundGradient key={index} className="rounded-[22px] max-w-sm h-full py-10 px-3 sm:px-10 bg-white dark:bg-zinc-900">
-          <h4 className="text-3xl text-black mt-4 mb-8 dark:text-neutral-200">
+          <h4 className="text-3xl text-black pe-16 md:pe-0 mt-4 mb-8 dark:text-neutral-200">
             {data.heading}
           </h4>
 
