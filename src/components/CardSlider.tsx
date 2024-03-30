@@ -9,11 +9,11 @@ import SolutionIcon from "../assets/icons/solutions.png"
 
 export function CardSlider() {
   return (
-    <div className="h-[20rem] rounded-md flex flex-col antialiased bg-transparent items-center justify-center relative overflow-hidden -mt-40 md:-mt-40">
+    <div className="h-[20rem] rounded-md flex flex-col antialiased bg-transparent items-center justify-center relative overflow-hidden -mt-16 md:-mt-40">
       <InfiniteMovingCards
         items={testimonials}
         direction="right"
-        speed="slow"
+        speed="normal"
       />
     </div>
   );

@@ -19,7 +19,7 @@ export default function Home() {
       <HeroSection />
 
       {/* Services Section  */}
-      <div className="relative w-full h-auto">
+      <div className="relative w-full h-64 md:h-auto">
         <CardSlider />
       </div>
 

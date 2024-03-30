@@ -396,7 +396,7 @@ export function GithubGlob() {
 
   return (
     <div className=" md:h-auto relative w-full">
-      <div className=" mx-auto w-[20rem] h-[20rem] lg:w-[35rem] lg:h-[30rem] relative overflow-hidden">
+      <div className="hidden md:block mx-auto w-[20rem] h-[20rem] lg:w-[35rem] lg:h-[30rem] relative overflow-hidden">
         <motion.div
           initial={{
             opacity: 0,
