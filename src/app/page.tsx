@@ -5,7 +5,7 @@ import { cn } from "@/utils/cn";
 import { CardSlider } from "@/components/CardSlider";
 import { HeroSection } from "@/components/HeroSection";
 import connectImg from "@/assets/connect.png"
-import Image from "next/image";
+// import Image from "next/image";
 import cuttingIcon from "@/assets/icons/managed.png"
 import vissionBg from "@/assets/vission-bg.jpg"
 import babstractBG from "@/assets/aaabstractBG.png"
@@ -32,7 +32,7 @@ export default function Home() {
           Connect Life Solutions
         </h1>
         <div className="z-40 opacity-85">
-          <Image src={connectImg.src} width={500}
+          <img src={connectImg.src} width={500}
             height={500} className=" md:max-w-xl" alt="image" />
         </div>
         <div>
@@ -58,22 +58,22 @@ export default function Home() {
         </h1>
         <div className="max-w-6xl grid grid-cols-1 md:grid-cols-2 sm:place-items-center py-10 lg:mx-auto lg:gap-x-40 z-10">
           <div className="pt-14 px-2 max-w-md">
-            <Image src={cuttingIcon.src} width={60} height={60} alt="icon" />
+            <img src={cuttingIcon.src} width={60} height={60} alt="icon" />
             <h2 className="text-2xl font-semibold text-gray-300 py-4">Cutting Edge Technologies</h2>
             <p className="pt-6 text-gray-300">Connect Life Solutions (CLS) aims to implement smarter technology solutions to business problems. At CLS, we focus on why, not just what, of the problems rather than jumping to fix them somehow. This approach will reduce overall costs and improve business Focus as a Long-Term strategy rather than settle for Short-Term Milestones.</p>
           </div>
           <div className="pt-14 px-2 max-w-md">
-            <Image src={cuttingIcon.src} width={60} height={60} alt="icon" />
+            <img src={cuttingIcon.src} width={60} height={60} alt="icon" />
             <h2 className="text-2xl font-semibold text-gray-300 py-4">Vision and Mission</h2>
             <p className="pt-6 text-gray-300">To empower our customers, achieve their business objectives by delivering unconventional IT solutions and superior consulting services. To build a trustworthy and profitable global IT service provider to our employees and partners. To accomplish our goals in an environment of fairness, integrity, and discretion towards our stakeholders and society.</p>
           </div>
           <div className="pt-14 px-2 max-w-md">
-            <Image src={cuttingIcon.src} width={60} height={60} alt="icon" />
+            <img src={cuttingIcon.src} width={60} height={60} alt="icon" />
             <h2 className="text-2xl font-semibold text-gray-300 py-4">Quality policy</h2>
             <p className="pt-6 text-gray-300">Connect Life Solutions is committed to provide customer satisfaction by delivering best-in-class integration services that meet appropriate statutory, regulatory and client requirements. Our team adheres to a quality management system that benefits stakeholders. And we improve our systems, processes and people on a regular basis.</p>
           </div>
           <div className="pt-14 px-2 max-w-md">
-            <Image src={cuttingIcon.src} width={60} height={60} alt="icon" />
+            <img src={cuttingIcon.src} width={60} height={60} alt="icon" />
             <h2 className="text-2xl font-semibold text-gray-300 py-4">Flexible Approach</h2>
             <p className="pt-6 text-gray-300">we unswervingly improve our systems, processes and people and offer a collaboration process that is 100% flexible.</p>
             <ul className="pt-4">
@@ -83,7 +83,7 @@ export default function Home() {
             </ul>
           </div>
         </div>
-        <Image src={babstractBG.src} className="absolute w-full h-full top-0 left-0 opacity-70" width={2000} height={2000} alt="icon" />
+        <img src={babstractBG.src} className="absolute w-full h-full top-0 left-0 opacity-70" width={2000} height={2000} alt="icon" />
       </div>
       {/* Our Commitment - Flexible Approach  */}
       <ScrollAnimation />
