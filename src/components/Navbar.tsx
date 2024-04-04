@@ -8,10 +8,10 @@ export default function Navbar({ className }: { className?: string }) {
   const [active, setActive] = useState<string | null>(null);
   return (
     <div
-      className={cn("absolute md:fixed top-2 md:top-6 inset-x-0 max-w-[1450px] mx-auto z-[999] md:flex justify-between px-2", className)}>
-      <div className="md:px-2 text-center py-2">
+      className={cn("absolute bg-slate-200 rounded-full md:fixed top-2 md:top-4 inset-x-0 max-w-[1250px] mx-2 xl:mx-auto z-[999] md:flex justify-between items-center px-2 md:px-4 py-2", className)}>
+      <div className="md:px-2 text-center mb-1 md:mb-0">
         <Link href={"/"}>
-         <h3 className="text-2xl xl:text-3xl">2A Corporate Solutions</h3>
+         <h3 className="text-2xl xl:text-3xl text-slate-800 mt-1 hover:opacity-[0.9] dark:text-white font-normal">2A Corporate Solutions</h3>
         </Link>
       </div>
       <Menu setActive={setActive}>

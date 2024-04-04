@@ -1,28 +1,28 @@
 "use client";
 import React from "react";
-import { BackgroundBeams } from "./ui/background-beams";
-import { GithubGlob } from "./GithubGlob";
-import { MovingBorderButton } from "./MovingBorderButton";
 import Link from "next/link";
+import Button from "./Button";
 
-export function HeroSection() {
+
+export default function HeroSection() {
   return (
-    <div className="h-auto py-28 md:py-40 xl:py-48 w-full rounded-md bg-neutral-950 relative flex items-center justify-center antialiased">
-      <div className="flex flex-col-reverse md:flex-row items-center z-50">
-        <div className="max-w-4xl mx-auto p-4">
-          <h1 className="relative z-10 text-5xl md:text-7xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 mt-10 md:mt-0 py-5 md:py-3 to-neutral-400  font-sans font-semibold">
+    <div className="h-[90vh] py-28 md:py-40 xl:py-48 w-full rounded-md bg-blue-700 dark:bg-slate-900 relative flex items-center justify-center antialiased">
+           <video autoPlay loop muted className="absolute inset-0 w-full h-full object-cover opacity-40">
+        <source src="./hero-video.mp4" type="video/mp4" />
+      </video>
+      <div className="flex flex-col-reverse md:flex-row items-center z-10">
+        <div className="max-w-3xl p-4">
+          <h1 className="relative z-10 text-5xl md:text-7xl text-slate-50 mt-10 md:mt-0 py-5 md:py-3  font-sans font-bold">
             Empowering Innovation, Transforming Futures
           </h1>
-          <p className="text-neutral-400 max-w-xl my-2 ml-2 text-sm relative z-10 mt-4 mb-10">
+          <p className="text-slate-200 max-w-xl my-2 ml-2 text-sm relative z-10 mt-4 mb-10">
             Join us on a journey of technological excellence, where creativity meets cutting-edge innovation to shape a brighter future. Together, lets build the digital landscape of tomorrow, today.
           </p>
           <Link href={"/contact"}>
-            <MovingBorderButton />
+            <Button className=" bg-slate-100 rounded-full py-3 px-5" value="Shedule a call" />
           </Link>
         </div>
-        <GithubGlob />
       </div>
-      <BackgroundBeams />
     </div>
   );
 }

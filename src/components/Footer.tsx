@@ -2,7 +2,7 @@ import Link from "next/link"
 
 const Footer = () => {
   return (
-    <div className="w-full min-h-[60vh] bg-slate-900/[0.8]">
+    <div className="w-full min-h-[60vh] bg-slate-900">
       <div className="w-full lg:mt-12 max-w-[1450px] px-4 py-16 mx-auto sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-wrap md:flex-row gap-10 md:gap-32 xl:gap-40">
           <div>

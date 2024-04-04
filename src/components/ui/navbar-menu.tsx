@@ -2,8 +2,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import Image from "next/image";
-import { BackgroundBeams } from "./background-beams";
 
 const transition = {
   type: "spring",
@@ -71,7 +69,7 @@ export const Menu = ({
   return (
     <nav
       onMouseLeave={() => setActive(null)} // resets the state
-      className="relative rounded-full boder border-transparent dark:bg-gray-900 dark:bg-opacity-80 dark:border-white/[0.2] bg-white shadow-input flex justify-center space-x-4 md:space-x-10 px-10 lg:px-32 py-4 "
+      className="relative rounded-full bg-slate-200 boder border-transparent dark:bg-slate-900 dark:bg-opacity-80 dark:border-white/[0.2] shadow-input flex justify-center space-x-4 md:space-x-10 px-6"
     >
       {children}
     </nav>
@@ -91,7 +89,7 @@ export const ProductItem = ({
 }) => {
   return (
     <Link href={href} className="flex space-x-2">
-      <Image
+      <img
         src={src}
         width={140}
         height={70}

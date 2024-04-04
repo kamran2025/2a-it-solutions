@@ -1,34 +1,29 @@
 "use client";
 
-import { Boxes } from "@/components/ui/background-boxes";
 import { cn } from "@/utils/cn";
-import { CardSlider } from "@/components/CardSlider";
-import { HeroSection } from "@/components/HeroSection";
+import HeroSection  from "@/components/HeroSection";
 import connectImg from "@/assets/connect.png"
-// import Image from "next/image";
 import cuttingIcon from "@/assets/icons/managed.png"
-import vissionBg from "@/assets/vission-bg.jpg"
-import babstractBG from "@/assets/aaabstractBG.png"
+import connectBg from "@/assets/hero-bg2.jpg"
+import visionBG from "@/assets/vision-bg.jpg"
 import { ScrollAnimation } from "@/components/ScrollAnimation";
 
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-black/95 antialiased bg-grid-white/[0.02]">
+    <main className="min-h-screen dark:bg-slate-900 antialiased">
       {/* Hero Section  */}
       <HeroSection />
 
       {/* Services Section  */}
-      <div className="relative w-full h-64 md:h-auto">
-        <CardSlider />
-      </div>
+      {/* <div className="relative w-full h-64 md:h-auto">
+      </div> */}
 
       {/* Connect Life Solutions  */}
-      <div className="h-auto relative w-full overflow-hidden bg-slate-900 flex flex-col lg:flex-row items-center justify-center gap-10 py-32 lg:pb-48 lg:pt-56 px-4 rounded-lg">
-        <div className="absolute inset-0 w-full h-full bg-slate-900 z-20 [mask-image:radial-gradient(transparent,white)] pointer-events-none" />
-
-        <Boxes />
-        <h1 className={cn("w-full text-center md:text-4xl text-3xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-400  font-sans font-bold absolute top-10 z-20")}>
+      <div className="h-auto bg-sky-300 relative w-full overflow-hidden flex flex-col lg:flex-row items-center justify-center gap-10 py-32 lg:pb-48 lg:pt-56 px-4 rounded-lg">
+        <div className="absolute inset-0 w-full h-full z-20 [mask-image:radial-gradient(transparent,white)] pointer-events-none" />
+        <img src={connectBg.src} className="absolute w-full h-full top-0 left-0 opacity-20" alt="icon" />
+        <h1 className={cn("w-full text-center md:text-4xl text-3xl text-black/80  font-sans font-bold absolute top-10 z-20")}>
           Connect Life Solutions
         </h1>
         <div className="z-40 opacity-85">
@@ -36,10 +31,10 @@ export default function Home() {
             height={500} className=" md:max-w-xl" alt="image" />
         </div>
         <div>
-          <p className="text-neutral-300 text-xl max-w-2xl pt-6 lg:pt-0 relative z-20">
+          <p className="text-slate-700 font-medium dark:text-neutral-300 text-xl max-w-2xl pt-6 lg:pt-0 relative z-20">
             ConnectLifeSolutions is in the business of IT consulting and Enterprise Software services to customers in India, North America, UK and Australia. At Connect Life, we are committed to customer success through transparent communication and consistent quality services.
           </p>
-          <p className="mt-8 text-neutral-300 text-xl max-w-2xl relative z-20">
+          <p className="mt-8 text-slate-700 font-medium dark:text-neutral-300 text-xl max-w-2xl relative z-20">
             Connect Life Solutions (CLS) aims to implement smarter technology solutions to business problems. At CLS, we focus on why, not just what, of the problems rather than jumping to fix them somehow. This approach will reduce overall costs and improve business Focus as a Long-Term strategy rather than settle for Short-Term Milestones.
           </p>
           <button className="relative mt-8 inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 z-20">
@@ -53,10 +48,11 @@ export default function Home() {
 
       {/* Vision and Mission  */}
       <div className="w-full relative h-auto flex flex-col justify-start py-10 px-2 ">
-        <h1 className="text-center md:text-4xl text-3xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-400  font-sans font-bold z-10">
+      <img src={visionBG.src} className="absolute w-full h-full top-0 left-0 " alt="image-bg" />
+        <h1 className="text-center md:text-4xl text-3xl  font-sans font-bold z-10">
           Vision and Mission
         </h1>
-        <div className="max-w-6xl grid grid-cols-1 md:grid-cols-2 sm:place-items-center py-10 lg:mx-auto lg:gap-x-40 z-10">
+        <div className="max-w-6xl grid grid-cols-1 md:grid-cols-2 sm:place-items-center  lg:mx-auto lg:gap-x-40 z-10">
           <div className="pt-14 px-2 max-w-md">
             <img src={cuttingIcon.src} width={60} height={60} alt="icon" />
             <h2 className="text-2xl font-semibold text-gray-300 py-4">Cutting Edge Technologies</h2>
@@ -83,7 +79,6 @@ export default function Home() {
             </ul>
           </div>
         </div>
-        <img src={babstractBG.src} className="absolute w-full h-full top-0 left-0 opacity-70" width={2000} height={2000} alt="icon" />
       </div>
       {/* Our Commitment - Flexible Approach  */}
       <ScrollAnimation />
