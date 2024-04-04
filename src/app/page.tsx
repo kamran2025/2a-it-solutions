@@ -15,11 +15,16 @@ export default function Home() {
       <HeroSection />
 
       {/* Services Section  */}
-      {/* <div className="relative w-full h-64 md:h-auto">
-      </div> */}
+      <div className="absolute inset-x-0 flex justify-center gap-2 w-full bottom-24">
+        <h3 className=" w-52 h-auto p-8 text-2xl rounded-3xl bg-black/40">Staffing Services</h3>
+        <h3 className=" w-52 h-auto p-8 text-2xl rounded-3xl bg-black/40">Consultancy Services</h3>
+        <h3 className=" w-52 h-auto p-8 text-2xl rounded-3xl bg-black/40">Delivery Services</h3>
+        <h3 className=" w-52 h-auto p-8 text-2xl rounded-3xl bg-black/40">Managed Services</h3>
+        <h3 className=" w-52 h-auto p-8 text-2xl rounded-3xl bg-black/40">Solution As A Service</h3>
+      </div>
 
       {/* Connect Life Solutions  */}
-      <div className="h-auto bg-sky-300 relative w-full overflow-hidden flex flex-col lg:flex-row items-center justify-center gap-10 py-32 lg:pb-48 lg:pt-56 px-4 rounded-lg">
+      <section className="h-auto bg-sky-300 relative w-full overflow-hidden flex flex-col lg:flex-row items-center justify-center gap-10 py-32 lg:pb-48 lg:pt-56 px-4 rounded-lg">
         <div className="absolute inset-0 w-full h-full z-20 [mask-image:radial-gradient(transparent,white)] pointer-events-none" />
         <img src={connectBg.src} className="absolute w-full h-full top-0 left-0 opacity-20" alt="icon" />
         <h1 className={cn("w-full text-center md:text-4xl text-3xl text-black/80  font-sans font-bold absolute top-10 z-20")}>
@@ -43,10 +48,10 @@ export default function Home() {
             </span>
           </button>
         </div>
-      </div>
+      </section>
 
       {/* Vision and Mission  */}
-      <div className="w-full relative h-auto flex flex-col justify-start py-10 px-2 ">
+      <section className="w-full relative h-auto flex flex-col justify-start py-10 px-2 ">
       <img src={visionBG.src} className="absolute w-full h-full top-0 left-0 " alt="image-bg" />
         <h1 className="text-center md:text-4xl text-3xl  font-sans font-bold z-10">
           Vision and Mission
@@ -78,7 +83,7 @@ export default function Home() {
             </ul>
           </div>
         </div>
-      </div>
+      </section>
       {/* Our Commitment - Flexible Approach  */}
 
 

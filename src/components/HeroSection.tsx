@@ -6,11 +6,11 @@ import Button from "./Button";
 
 export default function HeroSection() {
   return (
-    <div className="h-[90vh] py-28 md:py-40 xl:py-48 w-full rounded-md bg-blue-700 dark:bg-slate-900 relative flex items-center justify-center antialiased">
+    <div className="h-screen py-28 md:py-40 xl:py-48 w-full rounded-md bg-blue-700 dark:bg-slate-900 relative flex items-center justify-center antialiased">
            <video autoPlay loop muted className="absolute inset-0 w-full h-full object-cover opacity-40">
         <source src="./hero-video.mp4" type="video/mp4" />
       </video>
-      <div className="flex flex-col-reverse md:flex-row items-center z-10">
+      <div className="-mt-40 z-10">
         <div className="max-w-3xl p-4">
           <h1 className="relative z-10 text-5xl md:text-7xl text-slate-50 mt-10 md:mt-0 py-5 md:py-3  font-sans font-bold">
             Empowering Innovation, Transforming Futures
