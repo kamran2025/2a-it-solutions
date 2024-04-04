@@ -6,7 +6,6 @@ import connectImg from "@/assets/connect.png"
 import cuttingIcon from "@/assets/icons/managed.png"
 import connectBg from "@/assets/hero-bg2.jpg"
 import visionBG from "@/assets/vision-bg.jpg"
-import { ScrollAnimation } from "@/components/ScrollAnimation";
 
 
 export default function Home() {
@@ -81,7 +80,6 @@ export default function Home() {
         </div>
       </div>
       {/* Our Commitment - Flexible Approach  */}
-      <ScrollAnimation />
 
 
     </main>
